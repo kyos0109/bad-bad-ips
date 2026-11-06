@@ -96,7 +96,7 @@ Original DROP data remains subject to Spamhaus terms; see upstream copyright and
 
 The Spamhaus Project · [Feed](https://www.spamhaus.org/drop/drop_v6.json) · [Spamhaus DROP terms](https://www.spamhaus.org/blocklists/drop-fair-use-policy/)
 
-(c) 2026 The Spamhaus Project SLU (source timestamp: 1793871842). https://www.spamhaus.org/drop/terms/
+(c) 2026 The Spamhaus Project SLU (source timestamp: 1793870042). https://www.spamhaus.org/drop/terms/
 Original DROP data remains subject to Spamhaus terms; see upstream copyright and timestamp above.
 
 </details>
