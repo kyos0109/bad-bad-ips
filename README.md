@@ -8,7 +8,7 @@ Daily IPv4 and IPv6 blocklists. Overlapping entries are deduplicated and adjacen
 | Light | [IPv4](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/light/ipv4.txt) / [IPv6](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/light/ipv6.txt) |
 | Full | [IPv4](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/full/ipv4.txt) / [IPv6](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/full/ipv6.txt) |
 
-Updated 2026-11-07 (UTC) · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Updated 2026-11-08 (UTC) · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## Sources
 
@@ -96,7 +96,7 @@ Original DROP data remains subject to Spamhaus terms; see upstream copyright and
 
 The Spamhaus Project · [Feed](https://www.spamhaus.org/drop/drop_v6.json) · [Spamhaus DROP terms](https://www.spamhaus.org/blocklists/drop-fair-use-policy/)
 
-(c) 2026 The Spamhaus Project SLU (source timestamp: 1794044642). https://www.spamhaus.org/drop/terms/
+(c) 2026 The Spamhaus Project SLU (source timestamp: 1794131042). https://www.spamhaus.org/drop/terms/
 Original DROP data remains subject to Spamhaus terms; see upstream copyright and timestamp above.
 
 </details>
