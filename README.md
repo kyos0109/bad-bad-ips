@@ -8,9 +8,40 @@ Daily IPv4 and IPv6 blocklists. Overlapping entries are deduplicated and adjacen
 | Light | [IPv4](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/light/ipv4.txt) / [IPv6](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/light/ipv6.txt) |
 | Full | [IPv4](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/full/ipv4.txt) / [IPv6](https://raw.githubusercontent.com/kyos0109/bad-bad-ips/data/full/ipv6.txt) |
 
-Updated 2026-11-09 (UTC) · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+## Profile rules
+
+- Small: Spamhaus DROP/DROPv6 and C2IntelFeeds core coverage, plus addresses reported by at least 4 providers.
+- Light: all Small coverage plus addresses whose reporting providers add up to at least 3 credibility points (points per source are in the table below).
+- Full: the exact union of all sources enabled for this build.
+
+Each provider counts at most once per address. Credibility points are a reviewed judgment, not a measured accuracy. IPsum is excluded from voting because it aggregates other feeds. Private-only and unreviewed providers do not vote. Provider independence is a proxy: shared sensors or reporters cannot be ruled out. Votes apply only to overlapping addresses, never to an entire surrounding subnet.
+
+Updated 2026-11-10 (UTC) · Source-specific terms; see Sources below.
+
+Original source licenses and notices remain applicable. Emerging Threats data retains GPL 2.0; Blocklist.de retains its upstream terms. This is not a blanket relicensing of any profile under CC BY-NC-SA. Retaining notices alone does not establish compatibility of all upstream terms.
 
 ## Sources
+
+Source roles in this generation: ✓ = full source coverage; Hit = counts as one provider toward Small; Vote (n) = adds n credibility points toward Light. Only qualifying overlaps enter; — = no contribution. An address can still enter through another source.
+
+| Source | Small | Light | Full |
+| --- | :---: | :---: | :---: |
+| C2IntelFeeds | ✓ | ✓ | ✓ |
+| DShield | Hit | Vote (1) | ✓ |
+| IPsum Level 3 | — | — | ✓ |
+| Turris Sentinel | Hit | Vote (2) | ✓ |
+| AbuseTrack | Hit | Vote (1) | ✓ |
+| Carpathian | Hit | Vote (1) | ✓ |
+| ReportedIP | Hit | Vote (1) | ✓ |
+| ShadowWhisperer | Hit | Vote (1) | ✓ |
+| Spamhaus DROP | ✓ | ✓ | ✓ |
+| Spamhaus DROPv6 | ✓ | ✓ | ✓ |
+| FFraud | Hit | Vote (2) | ✓ |
+| Honeypot64 | Hit | Vote (1) | ✓ |
+| Jacobrakai Honeypot | Hit | Vote (1) | ✓ |
+| CINS Army | Hit | Vote (2) | ✓ |
+| Blocklist.de | Hit | Vote (1) | ✓ |
+| Emerging Threats Compromised | Hit | Vote (1) | ✓ |
 
 <details><summary>C2IntelFeeds</summary>
 
@@ -50,7 +81,7 @@ Provided as is, without warranty; completeness, absence of legitimate traffic an
 
 <details><summary>AbuseTrack</summary>
 
-AbuseTrack (https://abusetrack.io), CC BY 4.0 · [Feed](https://abusetrack.io/api/v1/blocklist.txt?comments=0) · [CC BY 4.0](https://abusetrack.io/legal/feed-license)
+Source: AbuseTrack (https://abusetrack.io), CC BY 4.0 · [Feed](https://abusetrack.io/api/v1/blocklist.txt?comments=0) · [CC BY 4.0](https://abusetrack.io/legal/feed-license)
 
 Provided as is, without warranty. Community reports may contain false positives, including shared or reassigned addresses.
 
@@ -124,6 +155,30 @@ Jacobrakai Foundation / jacobyoby · [Feed](https://raw.githubusercontent.com/ja
 License     : CC0 1.0 Universal (public domain) — use freely
 Warranty    : none; provided as-is. Entries may involve dynamic or
 https://creativecommons.org/publicdomain/zero/1.0/ Provided as-is, without warranty.
+
+</details>
+
+<details><summary>CINS Army</summary>
+
+Sentinel IPS / CINS Army · [Feed](https://cinsscore.com/list/ci-badguys.txt) · [Publisher permission (see source terms)](https://cinsscore.com/)
+
+Source: CINS Army, Sentinel IPS (https://cinsscore.com/). Normalized, filtered, deduplicated and merged into exact CIDRs. Original data remains subject to publisher terms; no upstream endorsement implied.
+
+</details>
+
+<details><summary>Blocklist.de</summary>
+
+Blocklist.de · [Feed](https://lists.blocklist.de/lists/all.txt) · [Original Blocklist.de terms; no standard data license stated](https://www.blocklist.de/en/export.html)
+
+Source: Blocklist.de (https://www.blocklist.de/en/export.html). Original upstream terms and rights retained; provided as-is and used at your own risk. Normalized, filtered and merged into exact CIDRs. Inclusion is a project decision, not a claim of a separate redistribution grant or CC relicensing.
+
+</details>
+
+<details><summary>Emerging Threats Compromised</summary>
+
+Emerging Threats · [Feed](https://rules.emergingthreats.net/blockrules/compromised-ips.txt) · [GPL 2.0 per upstream](https://community.emergingthreats.net/t/licensing-is-the-compromised-ips-list-also-open/676)
+
+Source: Emerging Threats Compromised IPs. GPL 2.0 per the upstream statement; license text: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html . Original data is not relicensed under CC BY-NC-SA. Normalized, filtered, deduplicated and merged into exact CIDRs; no upstream endorsement implied.
 
 </details>
 
