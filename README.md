@@ -16,7 +16,7 @@ Daily IPv4 and IPv6 blocklists. Overlapping entries are deduplicated and adjacen
 
 Each provider counts at most once per address. Credibility points are a reviewed judgment, not a measured accuracy. IPsum is excluded from voting because it aggregates other feeds. Private-only and unreviewed providers do not vote. Provider independence is a proxy: shared sensors or reporters cannot be ruled out. Votes apply only to overlapping addresses, never to an entire surrounding subnet.
 
-Updated 2026-11-11 (UTC) · Source-specific terms; see Sources below.
+Updated 2026-11-12 (UTC) · Source-specific terms; see Sources below.
 
 Original source licenses and notices remain applicable. Emerging Threats data retains GPL 2.0; Blocklist.de retains its upstream terms. This is not a blanket relicensing of any profile under CC BY-NC-SA. Retaining notices alone does not establish compatibility of all upstream terms.
 
@@ -118,7 +118,7 @@ Public-domain dedication under the Unlicense; provided AS IS without warranty or
 
 The Spamhaus Project · [Feed](https://www.spamhaus.org/drop/drop_v4.json) · [Spamhaus DROP terms](https://www.spamhaus.org/blocklists/drop-fair-use-policy/)
 
-(c) 2026 The Spamhaus Project SLU (source timestamp: 1794394604). https://www.spamhaus.org/drop/terms/
+(c) 2026 The Spamhaus Project SLU (source timestamp: 1794403604). https://www.spamhaus.org/drop/terms/
 Original DROP data remains subject to Spamhaus terms; see upstream copyright and timestamp above.
 
 </details>
